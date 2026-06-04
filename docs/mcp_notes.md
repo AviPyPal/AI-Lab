@@ -22,4 +22,4 @@ Potential future MCP use cases:
 - architecture review assistant
 
 ## Key Lesson
-MCP is an integration protocol, not a replacement for prompt engineering, structured outputs, or agent design.
+MCP is an integration protocol, not a replacement for prompt engineering, structured outputs, or agent design. 
