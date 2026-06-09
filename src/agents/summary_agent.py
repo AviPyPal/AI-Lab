@@ -3,13 +3,12 @@ from utils.parser import parse_summary_response
 
 
 class SummaryAgent:
-    def run(self, text: str) -> dict:
+    def execute(self, text: str) -> dict:
         prompt = create_structured_summary_prompt(text)
 
-        print("\n--- Agent Prompt ---\n")
+        print("\n--- Summary Agent (Executor) ---\n")
         print(prompt)
 
-        # Simulated LLM response (no API yet)
         simulated_response = """
         {
           "summary": [

@@ -1,14 +1,21 @@
+from agents.planner_agent import PlannerAgent
 from agents.summary_agent import SummaryAgent
 
 
 def main():
-    text = "AI engineering involves building scalable systems using machine learning models, APIs, and structured workflows."
+    user_input = "Summarize AI engineering concepts"
 
-    agent = SummaryAgent()
-    result = agent.run(text)
+    planner = PlannerAgent()
+    task = planner.plan(user_input)
 
-    print("\n--- Agent Result ---\n")
-    print(result)
+    if task == "summarize":
+        executor = SummaryAgent()
+        result = executor.execute(user_input)
+
+        print("\n--- Final Result ---\n")
+        print(result)
+    else:
+        print("No suitable agent found.")
 
 
 if __name__ == "__main__":

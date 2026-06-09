@@ -20,3 +20,15 @@ AI systems combine tools (APIs/functions) and context (documents/data).
 
 AI systems should include human validation for critical workflows.
 
+## In My AI Lab
+
+Future implementations:
+
+- API governance assistant
+- EDI assistant for transaction understanding
+- MuleSoft integration assistant
+- architecture review assistant
+
+## Key Insight
+
+Enterprise AI systems are not just models — they are integrated systems combining data, tools, workflows, and human oversight.
