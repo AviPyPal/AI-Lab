@@ -1,5 +1,5 @@
-from agents.planner_agent import PlannerAgent
-from agents.summary_agent import SummaryAgent
+from src.agents.planner_agent import PlannerAgent
+from src.agents.summary_agent import SummaryAgent
 
 
 def main():

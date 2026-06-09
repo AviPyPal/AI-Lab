@@ -1,5 +1,5 @@
-from prompts.structured_prompt import create_structured_summary_prompt
-from utils.parser import parse_summary_response
+from src.prompts.structured_prompt import create_structured_summary_prompt
+from src.utils.parser import parse_summary_response
 
 
 class SummaryAgent:
