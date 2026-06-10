@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from src.agents.planner_agent import PlannerAgent
 from src.agents.summary_agent import SummaryAgent
+from src.agents.rag_agent import RAGAgent
 
 app = FastAPI()
 
@@ -21,3 +22,10 @@ def summarize(query: str):
         return result
 
     return {"error": "No suitable agent found"}
+
+
+@app.get("/rag")
+def rag(query: str):
+    agent = RAGAgent()
+    result = agent.run(query)
+    return result.model_dump()
