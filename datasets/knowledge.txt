@@ -1,0 +1,9 @@
+AI engineering focuses on building scalable systems that integrate machine learning models into real-world applications.
+
+Retrieval Augmented Generation (RAG) allows systems to use external data to improve response accuracy and reduce hallucination.
+
+Model Context Protocol (MCP) provides a structured way for AI systems to interact with external tools and data sources.
+
+Enterprise AI systems combine agents, data retrieval, structured outputs, and APIs to deliver business value.
+
+In integration systems like EDI and MuleSoft, AI can assist in analyzing mappings, validating data flows, and generating documentation.

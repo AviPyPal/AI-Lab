@@ -1,21 +1,14 @@
-from src.agents.planner_agent import PlannerAgent
-from src.agents.summary_agent import SummaryAgent
+from src.agents.rag_agent import RAGAgent
 
 
 def main():
-    user_input = "Summarize AI engineering concepts"
+    query = "What is RAG?"
 
-    planner = PlannerAgent()
-    task = planner.plan(user_input)
+    agent = RAGAgent()
+    result = agent.run(query)
 
-    if task == "summarize":
-        executor = SummaryAgent()
-        result = executor.execute(user_input)
-
-        print("\n--- Final Result ---\n")
-        print(result)
-    else:
-        print("No suitable agent found.")
+    print("\n--- RAG Result ---\n")
+    print(result)
 
 
 if __name__ == "__main__":
