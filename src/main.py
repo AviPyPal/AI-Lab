@@ -8,7 +8,7 @@ def main():
     result = agent.run(query)
 
     print("\n--- RAG Result ---\n")
-    print(result)
+    print(result.model_dump())
 
 
 if __name__ == "__main__":
